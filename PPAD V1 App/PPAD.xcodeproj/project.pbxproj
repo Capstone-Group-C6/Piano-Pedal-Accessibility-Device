@@ -1,0 +1,435 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		74520DAE2B151549009104A7 /* PPADApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74520DAD2B151549009104A7 /* PPADApp.swift */; };
+		74520DB02B151549009104A7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74520DAF2B151549009104A7 /* ContentView.swift */; };
+		74520DB22B151553009104A7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 74520DB12B151553009104A7 /* Assets.xcassets */; };
+		74520DB52B151553009104A7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 74520DB42B151553009104A7 /* Preview Assets.xcassets */; };
+		74520DBC2B1515A1009104A7 /* BluetoothView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74520DBB2B1515A0009104A7 /* BluetoothView.swift */; };
+		74520DBF2B151745009104A7 /* SettingsObjects.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74520DBE2B151745009104A7 /* SettingsObjects.swift */; };
+		74520DC22B151807009104A7 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74520DC12B151807009104A7 /* SettingsView.swift */; };
+		74520DC42B151B7E009104A7 /* SessionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74520DC32B151B7E009104A7 /* SessionView.swift */; };
+		74520DC62B151BFF009104A7 /* BLEServer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74520DC52B151BFF009104A7 /* BLEServer.swift */; };
+		74520DC82B151C18009104A7 /* FaceTracking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74520DC72B151C18009104A7 /* FaceTracking.swift */; };
+		74520DCA2B151CD0009104A7 /* CameraPreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74520DC92B151CD0009104A7 /* CameraPreview.swift */; };
+		801D7ADA2B168E910053D411 /* TiltAngleBar1PRoll.swift in Sources */ = {isa = PBXBuildFile; fileRef = 801D7AD92B168E910053D411 /* TiltAngleBar1PRoll.swift */; };
+		808131C22B1BEE4E00B46115 /* TiltAngleBarBoth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 808131C12B1BEE4E00B46115 /* TiltAngleBarBoth.swift */; };
+		808131C42B1C0A3A00B46115 /* PedalIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 808131C32B1C0A3A00B46115 /* PedalIndicator.swift */; };
+		808131E42B1D03EA00B46115 /* TiltBarPitch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 808131E32B1D03EA00B46115 /* TiltBarPitch.swift */; };
+		80E1DCB22B1A7814006F333A /* Pedal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80E1DCB12B1A7814006F333A /* Pedal.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		74520DAA2B151549009104A7 /* PPAD.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PPAD.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		74520DAD2B151549009104A7 /* PPADApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PPADApp.swift; sourceTree = "<group>"; };
+		74520DAF2B151549009104A7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		74520DB12B151553009104A7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		74520DB42B151553009104A7 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		74520DBB2B1515A0009104A7 /* BluetoothView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BluetoothView.swift; sourceTree = "<group>"; };
+		74520DBE2B151745009104A7 /* SettingsObjects.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsObjects.swift; sourceTree = "<group>"; };
+		74520DC12B151807009104A7 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		74520DC32B151B7E009104A7 /* SessionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionView.swift; sourceTree = "<group>"; };
+		74520DC52B151BFF009104A7 /* BLEServer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BLEServer.swift; sourceTree = "<group>"; };
+		74520DC72B151C18009104A7 /* FaceTracking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaceTracking.swift; sourceTree = "<group>"; };
+		74520DC92B151CD0009104A7 /* CameraPreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraPreview.swift; sourceTree = "<group>"; };
+		801D7AD92B168E910053D411 /* TiltAngleBar1PRoll.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TiltAngleBar1PRoll.swift; sourceTree = "<group>"; };
+		808131C12B1BEE4E00B46115 /* TiltAngleBarBoth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TiltAngleBarBoth.swift; sourceTree = "<group>"; };
+		808131C32B1C0A3A00B46115 /* PedalIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PedalIndicator.swift; sourceTree = "<group>"; };
+		808131E32B1D03EA00B46115 /* TiltBarPitch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TiltBarPitch.swift; sourceTree = "<group>"; };
+		80E1DCB12B1A7814006F333A /* Pedal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pedal.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		74520DA72B151549009104A7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		74520DA12B151549009104A7 = {
+			isa = PBXGroup;
+			children = (
+				74520DAC2B151549009104A7 /* PPAD */,
+				74520DAB2B151549009104A7 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		74520DAB2B151549009104A7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				74520DAA2B151549009104A7 /* PPAD.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		74520DAC2B151549009104A7 /* PPAD */ = {
+			isa = PBXGroup;
+			children = (
+				74520DAD2B151549009104A7 /* PPADApp.swift */,
+				74520DC02B151755009104A7 /* Model */,
+				74520DBD2B1515D7009104A7 /* View */,
+				74520DB12B151553009104A7 /* Assets.xcassets */,
+				74520DB32B151553009104A7 /* Preview Content */,
+			);
+			path = PPAD;
+			sourceTree = "<group>";
+		};
+		74520DB32B151553009104A7 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				74520DB42B151553009104A7 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		74520DBD2B1515D7009104A7 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				74520DBB2B1515A0009104A7 /* BluetoothView.swift */,
+				74520DAF2B151549009104A7 /* ContentView.swift */,
+				74520DC12B151807009104A7 /* SettingsView.swift */,
+				74520DC32B151B7E009104A7 /* SessionView.swift */,
+				808131E22B1D03AA00B46115 /* UIElements */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		74520DC02B151755009104A7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				74520DBE2B151745009104A7 /* SettingsObjects.swift */,
+				74520DC52B151BFF009104A7 /* BLEServer.swift */,
+				74520DC72B151C18009104A7 /* FaceTracking.swift */,
+				74520DC92B151CD0009104A7 /* CameraPreview.swift */,
+				80E1DCB12B1A7814006F333A /* Pedal.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		808131E22B1D03AA00B46115 /* UIElements */ = {
+			isa = PBXGroup;
+			children = (
+				801D7AD92B168E910053D411 /* TiltAngleBar1PRoll.swift */,
+				808131C12B1BEE4E00B46115 /* TiltAngleBarBoth.swift */,
+				808131C32B1C0A3A00B46115 /* PedalIndicator.swift */,
+				808131E32B1D03EA00B46115 /* TiltBarPitch.swift */,
+			);
+			path = UIElements;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		74520DA92B151549009104A7 /* PPAD */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 74520DB82B151553009104A7 /* Build configuration list for PBXNativeTarget "PPAD" */;
+			buildPhases = (
+				74520DA62B151549009104A7 /* Sources */,
+				74520DA72B151549009104A7 /* Frameworks */,
+				74520DA82B151549009104A7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PPAD;
+			productName = PPAD;
+			productReference = 74520DAA2B151549009104A7 /* PPAD.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		74520DA22B151549009104A7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					74520DA92B151549009104A7 = {
+						CreatedOnToolsVersion = 15.0.1;
+					};
+				};
+			};
+			buildConfigurationList = 74520DA52B151549009104A7 /* Build configuration list for PBXProject "PPAD" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 74520DA12B151549009104A7;
+			productRefGroup = 74520DAB2B151549009104A7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				74520DA92B151549009104A7 /* PPAD */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		74520DA82B151549009104A7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				74520DB52B151553009104A7 /* Preview Assets.xcassets in Resources */,
+				74520DB22B151553009104A7 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		74520DA62B151549009104A7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				80E1DCB22B1A7814006F333A /* Pedal.swift in Sources */,
+				801D7ADA2B168E910053D411 /* TiltAngleBar1PRoll.swift in Sources */,
+				74520DC62B151BFF009104A7 /* BLEServer.swift in Sources */,
+				74520DC22B151807009104A7 /* SettingsView.swift in Sources */,
+				74520DC42B151B7E009104A7 /* SessionView.swift in Sources */,
+				808131C42B1C0A3A00B46115 /* PedalIndicator.swift in Sources */,
+				74520DCA2B151CD0009104A7 /* CameraPreview.swift in Sources */,
+				74520DB02B151549009104A7 /* ContentView.swift in Sources */,
+				74520DBC2B1515A1009104A7 /* BluetoothView.swift in Sources */,
+				74520DAE2B151549009104A7 /* PPADApp.swift in Sources */,
+				74520DBF2B151745009104A7 /* SettingsObjects.swift in Sources */,
+				74520DC82B151C18009104A7 /* FaceTracking.swift in Sources */,
+				808131C22B1BEE4E00B46115 /* TiltAngleBarBoth.swift in Sources */,
+				808131E42B1D03EA00B46115 /* TiltBarPitch.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		74520DB62B151553009104A7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		74520DB72B151553009104A7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		74520DB92B151553009104A7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 8;
+				DEVELOPMENT_ASSET_PATHS = "\"PPAD/Preview Content\"";
+				DEVELOPMENT_TEAM = 5W94YJ43DL;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription = "Needed to comunicate with accebility hardware";
+				INFOPLIST_KEY_NSBluetoothPeripheralUsageDescription = "Needed to comunicate with accebility hardware";
+				INFOPLIST_KEY_NSCameraUsageDescription = "Needed for applevision calculation for face roll and pitch";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.2;
+				PRODUCT_BUNDLE_IDENTIFIER = edu.coe.neu.capstone.PPAD;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		74520DBA2B151553009104A7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 8;
+				DEVELOPMENT_ASSET_PATHS = "\"PPAD/Preview Content\"";
+				DEVELOPMENT_TEAM = 5W94YJ43DL;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription = "Needed to comunicate with accebility hardware";
+				INFOPLIST_KEY_NSBluetoothPeripheralUsageDescription = "Needed to comunicate with accebility hardware";
+				INFOPLIST_KEY_NSCameraUsageDescription = "Needed for applevision calculation for face roll and pitch";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.2;
+				PRODUCT_BUNDLE_IDENTIFIER = edu.coe.neu.capstone.PPAD;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		74520DA52B151549009104A7 /* Build configuration list for PBXProject "PPAD" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				74520DB62B151553009104A7 /* Debug */,
+				74520DB72B151553009104A7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		74520DB82B151553009104A7 /* Build configuration list for PBXNativeTarget "PPAD" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				74520DB92B151553009104A7 /* Debug */,
+				74520DBA2B151553009104A7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 74520DA22B151549009104A7 /* Project object */;
+}
