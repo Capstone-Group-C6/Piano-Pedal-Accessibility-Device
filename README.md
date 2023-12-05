@@ -46,9 +46,21 @@ The head tracking uses Apple's Vision Library to isolate features on the face an
 ### Navigating Settings
 The settings page in the top right corner of the app allows the user to adjust what feels best to them when the session is running. There are two tabs for one pedal and three pedal, which determines if the session will try to detect one or three directions. In the one pedal tab, the user has the ability to determine which way they want to tilt their head to pass the threshold, either left, right, both, or down. In addition, there are options to toggle inverse which presses the pedal unless the threshold is crossed, and toggle hold which keeps the state of the pedal when the threshold is crossed. There is a slider to adjust the angle with an example threshold bar beneath so that the user can test that angle and see what feels best for them. It was important to us to give the user as much freedom as possible to configure their sessions however they wanted to be natural for them.
 
+<p align="center">
+<img src="SoftwareFiles/1PSettings.PNG" style="width:300px"/>
+</p>
+
 In the three pedal system, the same options are available, except the ability to hold and change directions for each pedal. The sustain and sostenuto pedals can have their directions switched to change which one is left and right, but the soft pedal is locked as tilting downward. This is because when playing the piano, the soft pedal is the only other pedal that can be used in tandem with the other two. Given that you can't tilt your head both left and right at the same time, but you can tilt down and right, we decided to keep the soft pedal as only down. Each of these three pedals has the ability to be active or inactive, so if a song doesn't require a specific pedal, you can turn it off to avoid triggering it by accident. These pedals also all have angle adjustment sliders and threshold bars to give the user a visual on what angles would work best for them.
 
+<p align="center">
+<img src="SoftwareFiles/3PSettings.PNG" style="width:300px"/>
+</p>
+
 When the session begins, the saved settings variables are processed between specified cases that run the head tracking logic. There is a case to handle every possible combination of toggles and angle values in both the one and three pedal systems. The user can then see these settings in action through the indicator bars in the session view. There are the same threshold bars to show how far the user's head is tilting, and at the bottom there are indicator bars to show which pedals are activated and sending a signal to the device.
+
+<p align="center">
+<img src="SoftwareFiles/SessionView.PNG" style="width:300px"/>
+</p>
 
 ### Software Replication
 To replicate the software, the user will need to flash the firmware onto the chip they have started using. From there, the app can be run through XCode with no additional changes and be built to an IPhone for testing. Additionally, if the user wants to share the app with others, they can get and Apple Developer License and push the app to TestFlight where it can be downloaded on any iOS device. The backend functions that deal with bluetooth connection and face tracking can be found in the model, and all of the frontend app pages can be found in the view. 
