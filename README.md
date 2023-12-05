@@ -47,6 +47,10 @@ The head tracking uses Apple's Vision Library to isolate features on the face an
 The settings page in the top right corner of the app allows the user to adjust what feels best to them when the session is running. There are two tabs for one pedal and three pedal, which determines if the session will try to detect one or three directions. In the one pedal tab, the user has the ability to determine which way they want to tilt their head to pass the threshold, either left, right, both, or down. In addition, there are options to toggle inverse which presses the pedal unless the threshold is crossed, and toggle hold which keeps the state of the pedal when the threshold is crossed. There is a slider to adjust the angle with an example threshold bar beneath so that the user can test that angle and see what feels best for them. It was important to us to give the user as much freedom as possible to configure their sessions however they wanted to be natural for them.
 
 <p align="center">
+<img src="SoftwareFiles/HomePage.png" style="width:300px"/>
+</p>
+
+<p align="center">
 <img src="SoftwareFiles/1PSettings.PNG" style="width:300px"/>
 </p>
 
