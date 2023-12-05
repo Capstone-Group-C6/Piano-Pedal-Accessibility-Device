@@ -10,12 +10,18 @@ Jonathan loves to play the piano, but he is unable to use the pedals because he 
 
 ## Hardware
 ### Hardware Overview
-One half of the PPAD system is the device that plugs into the back of the piano and replicates the pedal press signal. Anyone who wants to use this design in the future will need a chip capable of sending and recieving data over bluetooth (we used an ESP32 as a relatively inexpensive option so our schematics match that). In addition, they will need a way to power the device through micro-usb and connect the device to their piano pedal port using 1/4-inch jacks.
+One half of the PPAD system is the device that plugs into the back of the piano and replicates the pedal press signal. Anyone who wants to use this design in the future will need a chip capable of sending and recieving data over bluetooth (we used an ESP32 as a relatively inexpensive option so our schematics match that). In addition, they will need a way to power the device through micro-USB and connect the device to their piano pedal port using 1/4-inch jacks.
 
 ### Hardware Replication
-The necessary schematics have been added to allow anyone to replicate our board for their own personal use.
+The necessary KiCad files (schematic and PCB layout) have been added to allow anyone to replicate our board for their own personal use. The following images display the schematic design as well as the PCB layout of the components and traces involved in integrating all the parts of the board. [insert image 1] [insert image 2] In terms of the manufacturing and assembly process, orders can be made through various PCB manufacturers (we used JLCPCB.com) and provide them with our PCB/schematic files to make an order. Below is the part list with links to sites to purchase each component. (NOTE: You can also import the provided files into the KiCad project manager to view/make any changes to the project) In terms of assembly, be sure to solder on the components that are not already assembled onto the board from the manufacturer (i.e. 1/4" sockets...).
 
-### Three Pedal Propietary Cable
+Parts List:
+1/4" Socket: https://www.amazon.com/dp/B07MR2TT3Q?psc=1&smid=A34H4GNHCXU7L2&ref_=chk_typ_imgToDp
+LEDs: [maybe link? not really]
+ESP32 Chip: [link]
+Switch: [link]
+
+### Three Pedal Proprietary Cable
 To use three pedals with the device, a new
 
 ## Software
