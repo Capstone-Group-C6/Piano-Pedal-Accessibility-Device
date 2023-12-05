@@ -13,22 +13,29 @@ Jonathan loves to play the piano, but he is unable to use the pedals because he 
 One half of the PPAD system is the device that plugs into the back of the piano and replicates the pedal press signal. Anyone who wants to use this design in the future will need a chip capable of sending and recieving data over bluetooth (we used an ESP32 as a relatively inexpensive option so our schematics match that). In addition, they will need a way to power the device through micro-USB and connect the device to their piano pedal port using 1/4-inch jacks.
 
 ### Hardware Replication
-The necessary KiCad files (schematic and PCB layout) have been added to allow anyone to replicate our board for their own personal use. The following images display the schematic design as well as the PCB layout of the components and traces involved in integrating all the parts of the board. [insert image 1] [insert image 2] In terms of the manufacturing and assembly process, orders can be made through various PCB manufacturers (we used JLCPCB.com) and provide them with our PCB/schematic files to make an order. Below is the part list with links to sites to purchase each component. (NOTE: You can also import the provided files into the KiCad project manager to view/make any changes to the project) In terms of assembly, be sure to solder on the components that are not already assembled onto the board from the manufacturer (i.e. 1/4" sockets...).
+The necessary KiCad files (schematic and PCB layout) have been added to allow anyone to replicate our board for their own personal use. The following images display the schematic design as well as the PCB layout of the components and traces involved in integrating all the parts of the board. 
+
+<p align="center">
+<img src="HardwareFiles/schematic.png" />
+<img src="HardwareFiles/boardDesign.png" />
+</p>
+
+In terms of the manufacturing and assembly process, orders can be made through various PCB manufacturers (we used JLCPCB.com) and provide them with our PCB/schematic files to make an order. Below is the part list with links to sites to purchase each component. (NOTE: You can also import the provided files into the KiCad project manager to view/make any changes to the project) In terms of assembly, be sure to solder on the components that are not already assembled onto the board from the manufacturer (i.e. 1/4" sockets...).
 
 Parts List:
 - 1/4" Socket: https://www.amazon.com/dp/B07MR2TT3Q?psc=1&smid=A34H4GNHCXU7L2&ref_=chk_typ_imgToDp
-- LEDs: [maybe link? not really]
-- ESP32 Chip: [link]
-- Switch: [link]
+- LEDs: (https://www.amazon.com/eBoot-Pieces-Emitting-Diodes-Assorted/dp/B06XPV4CSH/ref=sr_1_8?crid=1UQGUEZ7QY5KU&keywords=leds&qid=1701737252&sprefix=leds%2Caps%2C88&sr=8-8&th=1)
+- ESP32 Chip: https://www.amazon.com/Development-Microcontroller-Integrated-Antenna-Amplifiers/dp/B09GK74F7N/ref=sr_1_1_sspa?crid=18ESI34J05HVB&keywords=esp32&qid=1701737319&sprefix=esp32%2Caps%2C82&sr=8-1-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&psc=1
 
 ### Three Pedal Proprietary Cable
-To use three pedals with the device, a new
+Using three pedals with the device is a little more complicated because of how digital pianos are made. Any piano that can have a three pedal attachment makes that connection through a proprietary cable instead of a standard 1/4-inch jack, so it was impossible to design a one-size-fits-all solution. Any users who want to use this functionality will have to create their own cable that ends in three 1/4-inch jacks to connect to the device. That way the other end of that cable can be the proper connection port that will work for their specific piano.
 
 ## Software
 ### Software Overview
-The other half of the PPAD system
+The other half of the PPAD system is the iOS application that detects the head tilt and sends the signal over bluetooth to the device. The app can be pushed to a TestFlight app for sharing with others, or the user can build directly to their phone through XCode. The app contains settings for selecting one or three pedals, changing the tilt direction, adjusting the threshold angle that triggers the tilt, toggling hold, and toggling inverse. The app has an additional page to give the user some directions on how to connect to the device through bluetooth, and the best way to orient the phone when beginning a session. When the session view is started, it takes all of the saved data from settings, tracks the users face, and begins sending data to the device to replicate the signal of the pedal press.
 
 ### Firmware Overview
+The firmware that needs to be uploaded to the ESP32 chip also exists within this repository. It activates the necessary GPIO pins when it recieves the packet from the application and it also contains the code necessary to establish the bluetooth connection. The app needs to be open ahead of time because when the device is powered on it begins searching for a connection. When the session is started in the app, it begins sending 
 
 ### Bluetooth Connection
 
