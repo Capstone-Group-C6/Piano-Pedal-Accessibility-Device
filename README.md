@@ -1,5 +1,5 @@
 # Piano-Pedal-Accessibility-Device (PianoPAD)
-Northeastern University Capstone 2023 Open Source Repository for our PPAD system. Software designed by Roberto Chadwick, Lucas Laya Marina, and Luke Wisner. Hardware designed by Hanchen Liu, Josh Moffat, and Tristan Siu.
+Northeastern University 1st Place Capstone 2023 Open Source Repository for our PPAD system. Software designed by Roberto Chadwick, Lucas Laya Marina, and Luke Wisner. Hardware designed by Hanchen Liu, Josh Moffat, and Tristan Siu.
 
 ### General Overview
 This project provides a way for people with a disability to use their piano pedals by tracking their head tilt and replicating it as pedal presses. The app is only for iOS devices, as we used Apple's Vision Library to get the necessary head tracking data. We wanted to make our work open-source so that anyone could make this device for themselves or anyone they know who would like the ability to use their piano pedals. Through the device that you plug into the piano port and the iOS application, we have created a system that can replicate pedal presses for one or three pedals. 
