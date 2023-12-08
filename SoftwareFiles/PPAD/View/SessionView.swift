@@ -29,7 +29,7 @@ struct SessionView: View {
     
     @State private var resetHold = false
     
-    //debounce Temps
+    //debounce Temps a new debounce temp is made for every test case
     @State private var debounceTemp1 = false
     @State private var debounceTemp2 = false
     @State private var debounceTemp3 = false
@@ -121,8 +121,9 @@ struct SessionView: View {
                                     if newValue > settings.pedalRadians {
                                         if settings.sustainToggleHold == false {
                                             isRollAboveThreshold = true
+                                            //debounce logic shown here and repeated below cases
                                             debounceTemp1 = true
-                                            DispatchQueue.main.asyncAfter(deadline: .now() + 0.20) {
+                                            DispatchQueue.main.asyncAfter(deadline: .now() + 0.20) { //debounce delay set to .20 because after playing the piano its what felt right. 
                                                 debounceTemp1 = false
                                             }
                                         } else {
@@ -330,7 +331,7 @@ struct SessionView: View {
                                         if (newValue < midPedal.angle) && (midPedal.inverse == true) {
                                             isRollAboveMidThreshold = true
                                             debounceTemp6 = true
-                                            DispatchQueue.main.asyncAfter(deadline: .now() + 0.10) {
+                                            DispatchQueue.main.asyncAfter(deadline: .now() + 0.10) { //debounce on pitch has a lower delay. This delay has been fine tuned :) 
                                                 debounceTemp6 = false
                                             }
                                         } else if (newValue > midPedal.angle) && (midPedal.inverse == true) {
