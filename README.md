@@ -1,5 +1,5 @@
 # Piano-Pedal-Accessibility-Device (PianoPAD)
-Northeastern University 1st Place Capstone 2023 Open Source Repository for our PPAD system. Software designed by Roberto Chadwick, Lucas Laya Marina, and Luke Wisner. Hardware designed by Hanchen Liu, Josh Moffat, and Tristan Siu.
+Northeastern University 1st Place Capstone 2023 Open Source Repository for our PianoPAD system. Software designed by Roberto Chadwick, Lucas Laya Marina, and Luke Wisner. Hardware designed by Hanchen Liu, Josh Moffat, and Tristan Siu.
 
 ### General Overview
 This project provides a way for people with a disability to use their piano pedals by tracking their head tilt and replicating it as pedal presses. The app is only for iOS devices, as we used Apple's Vision Library to get the necessary head tracking data. We wanted to make our work open-source so that anyone could make this device for themselves or anyone they know who would like the ability to use their piano pedals. Through the device that you plug into the piano port and the iOS application, we have created a system that can replicate pedal presses for one or three pedals. 
@@ -10,7 +10,7 @@ Jonathan loves to play the piano, but he is unable to use the pedals because he 
 
 ## Hardware
 ### Hardware Overview
-One half of the PPAD system is the device that plugs into the back of the piano and replicates the pedal press signal. Anyone who wants to use this design in the future will need a chip capable of sending and recieving data over bluetooth (we used an ESP32 as a relatively inexpensive option so our schematics match that). In addition, they will need a way to power the device through micro-USB and connect the device to their piano pedal port using 1/4-inch jacks.
+One half of the PianoPAD system is the device that plugs into the back of the piano and replicates the pedal press signal. Anyone who wants to use this design in the future will need a chip capable of sending and recieving data over bluetooth (we used an ESP32 as a relatively inexpensive option so our schematics match that). In addition, they will need a way to power the device through micro-USB and connect the device to their piano pedal port using 1/4-inch jacks.
 
 ### Hardware Replication
 The necessary KiCad files (schematic and PCB layout) have been added to allow anyone to replicate our board for their own personal use. The following images display the schematic design as well as the PCB layout of the components and traces involved in integrating all the parts of the board. 
@@ -32,7 +32,7 @@ Using three pedals with the device is a little more complicated because of how d
 
 ## Software
 ### Software Overview
-The other half of the PPAD system is the iOS application that detects the head tilt and sends the signal over Bluetooth to the device. The app can be pushed to a TestFlight app for sharing with others, or the user can build directly to their phone through XCode. The app contains settings for selecting one or three pedals, changing the tilt direction, adjusting the threshold angle that triggers the tilt, toggling hold, and toggling inverse. The app has an additional page to give the user some directions on how to connect to the device through Bluetooth, and the best way to orient the phone when beginning a session. When the session view is started, it takes all of the saved data from settings, tracks the user's face, and begins sending data to the device to replicate the signal of the pedal press.
+The other half of the PianoPAD system is the iOS application that detects the head tilt and sends the signal over Bluetooth to the device. The app can be pushed to a TestFlight app for sharing with others, or the user can build directly to their phone through XCode. The app contains settings for selecting one or three pedals, changing the tilt direction, adjusting the threshold angle that triggers the tilt, toggling hold, and toggling inverse. The app has an additional page to give the user some directions on how to connect to the device through Bluetooth, and the best way to orient the phone when beginning a session. When the session view is started, it takes all of the saved data from settings, tracks the user's face, and begins sending data to the device to replicate the signal of the pedal press.
 
 ### Firmware Overview
 The firmware that needs to be uploaded to the ESP32 chip also exists within this repository. It activates the necessary GPIO pins when it receives the packet from the application and it also contains the code necessary to establish the Bluetooth connection. The firmware then reads the sent byte to determine if any of the pedals are held down and which GPIO pins are activated if so.
