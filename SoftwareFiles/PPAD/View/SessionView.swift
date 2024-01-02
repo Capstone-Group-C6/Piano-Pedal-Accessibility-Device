@@ -50,50 +50,6 @@ struct SessionView: View {
         }
     }
     
-//    func modeSelect() {
-//        if settings.threePedal == false {
-//            if settings.pedalDirection == "Right" {
-//                if settings.sustainToggleInverse == true {
-//                    sessionMode = 1
-//                    return
-//                } else {
-//                    sessionMode = 0
-//                }
-//            } 
-//            else if settings.pedalDirection == "Left" {
-//                if settings.sustainToggleInverse == true {
-//                    sessionMode = 0
-//                } else {
-//                    sessionMode = 1
-//                }
-//            }
-//            else if settings.pedalDirection == "Both" {
-//                if settings.sustainToggleInverse == true {
-//                    sessionMode = 3
-//                } else {
-//                    sessionMode = 2
-//                }
-//            } 
-//            else if settings.pedalDirection == "Down" {
-//                if settings.sustainToggleInverse == true {
-//                    sessionMode = 9
-//                } else {
-//                    sessionMode = 8
-//                }
-//            }
-//        } else if settings.threePedal == true {
-//            if (rightPedal.inverse == false) && (leftPedal.inverse == false) {
-//                sessionMode = 4
-//            } else if (rightPedal.inverse == true) && (leftPedal.inverse == false) {
-//                sessionMode = 5
-//            } else if (rightPedal.inverse == false) && (leftPedal.inverse == true) {
-//                sessionMode = 6
-//            } else if (rightPedal.inverse == true) && (leftPedal.inverse == true) {
-//                sessionMode = 7
-//            }
-//        }
-//    }
-    
     func modeSelect() {
         if settings.threePedal == true {
             sessionMode = 3
