@@ -99,7 +99,6 @@ struct SessionView: View {
                             .padding()
                             .rotationEffect(.degrees(180), anchor: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
                     // 1P2D Horizontal Mode
-                    // INVERSE NOT WORKING
                     case 1:
                         TiltAngleBarBoth(tiltAngle: faceTracking.roll, selectedLeftAngle: settings.pedalRadians, selectedRightAngle: settings.bothRadians)
                             .onChange(of: faceTracking.roll) { newValue in
