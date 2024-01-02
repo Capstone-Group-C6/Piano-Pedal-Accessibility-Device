@@ -48,9 +48,17 @@ struct ContentView: View {
                 }
                 .navigationDestination(isPresented: $showSession){
                     if settings.sustainDirection == "Right" {
-                        SessionView(faceTracking: faceTracking, bleServer: bleServer, rightPedal: Pedal(inverse: settings.sustainToggleInverse, angle: settings.sustainRadians, type: 2, hold: settings.sustainToggleHold, state: settings.sustainToggleOn), leftPedal: Pedal(inverse: settings.sostenutoToggleInverse, angle: settings.sostenutoRadians, type: 1, hold: false, state: settings.sostenutoToggleOn), midPedal: Pedal(inverse: settings.softToggleInverse, angle: settings.softRadians, type: 0, hold: false, state: settings.softToggleOn))
+                        SessionView(faceTracking: faceTracking, bleServer: bleServer, 
+                                    soloPedal: Pedal(inverse: settings.sustainToggleInverse, angle: settings.pedalRadians, type: 2, hold: settings.sustainToggleHold, state: true),
+                                    rightPedal: Pedal(inverse: settings.sustainToggleInverse, angle: settings.sustainRadians, type: 2, hold: settings.sustainToggleHold, state: settings.sustainToggleOn),
+                                    leftPedal: Pedal(inverse: settings.sostenutoToggleInverse, angle: settings.sostenutoRadians, type: 1, hold: false, state: settings.sostenutoToggleOn),
+                                    midPedal: Pedal(inverse: settings.softToggleInverse, angle: settings.softRadians, type: 0, hold: false, state: settings.softToggleOn))
                     } else {
-                        SessionView(faceTracking: faceTracking, bleServer: bleServer, rightPedal: Pedal(inverse: settings.sostenutoToggleInverse, angle: settings.sostenutoRadians, type: 1, hold: false, state: settings.sostenutoToggleOn), leftPedal: Pedal(inverse: settings.sustainToggleInverse, angle: settings.sustainRadians, type: 2, hold: settings.sustainToggleHold, state: settings.sustainToggleOn), midPedal: Pedal(inverse: settings.softToggleInverse, angle: settings.softRadians, type: 0, hold: false, state: settings.softToggleOn))
+                        SessionView(faceTracking: faceTracking, bleServer: bleServer, 
+                                    soloPedal: Pedal(inverse: settings.sustainToggleInverse, angle: settings.pedalRadians, type: 2, hold: settings.sustainToggleHold, state: true),
+                                    rightPedal: Pedal(inverse: settings.sostenutoToggleInverse, angle: settings.sostenutoRadians, type: 1, hold: false, state: settings.sostenutoToggleOn),
+                                    leftPedal: Pedal(inverse: settings.sustainToggleInverse, angle: settings.sustainRadians, type: 2, hold: settings.sustainToggleHold, state: settings.sustainToggleOn),
+                                    midPedal: Pedal(inverse: settings.softToggleInverse, angle: settings.softRadians, type: 0, hold: false, state: settings.softToggleOn))
                     }
                 }
                 .disabled(!isConnected)
